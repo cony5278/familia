@@ -45,6 +45,7 @@
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
                 <a style="position:absolute;left:0px;top:-10px;" class="navbar-brand page-scroll" href="#page-top"><img src="img/logo2.png" width="50" height="40"></a>
+           <a style="position:absolute;left:50px;" class="navbar-brand page-scroll" href="#page-top">ESSOTEC</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -68,13 +69,20 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
+  
     <header>
+
         <div class="header-content">
             <div class="header-content-inner">
+            @if (Session::has('mensaje'))
+            <div class="alert alert-success fade in">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                  <strong>Exito!</strong> {{Session::get('mensaje')}}
+            </div>
+            @endif
                 <h1 id="homeHeading">ESTRUCTURAS, SOFTWARE Y TECNOLOGÍA AMBIENTAL</h1>
                 <hr>
-                <p>Tecnologia e innovacion para el ambiente</p>
+                <p>Tecnologia e innovacion para el ambiente.</p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Mas infomración</a>
             </div>
         </div>
@@ -84,7 +92,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">¿Quién Somos?!</h2>
+                    <h2 class="section-heading">¿Quién Somos?</h2>
                     <hr class="light">                   
                     <p class="text-faded">
                     Trabajamos para aportar soluciones innovadoras 
@@ -334,22 +342,23 @@
                  <div class="alert alert-success hidden" id="contactSuccess"><strong>Enviado!</strong> Gracias por contactarnos.</div>
                                 <div class="alert alert-error hidden" id="contactError"><strong>Error!</strong> Hubo un error en el envío del mensaje.</div>
                               
-                    <form method="POST" name="fContacto" id="fContacto" action="">
+                    <form method="POST" name="fContacto" id="fContacto" action="{{ route('user.store') }}">
+                     <input type="hidden" name="_token" value="{{ csrf_token() }}"></input>
                         <div class="col-md-6">
                             <label>Nombre*</label>
                             <input type="text" name="name" id="name" class="form-control"/>
                         </div>
                         <div class="col-md-6">
                             <label>Telefono*</label>
-                            <input type="text" name="name" id="name" class="form-control"/>
+                            <input type="text" name="phone" id="name" class="form-control"/>
                         </div>
                          <div class="col-md-12">
                             <label>Correo electronico*</label>
-                            <input type="text" name="name" id="name" class="form-control"/>
+                            <input type="text" name="email" id="name" class="form-control"/>
                         </div>                         
                         <div class="col-md-12">
                         <label>Dudas / Inquietudes *</label>
-                        <textarea maxlength="5000" rows="10" class="form-control" name="mensaje" id="message"></textarea>
+                        <textarea maxlength="5000" rows="10" class="form-control" name="question" id="message"></textarea>
                         </div>
                         <div class="col-md-6 btn-toolbar">
                             <input type="submit" value="Enviar Formulario" class="btn btn-primary btn-large" data-loading-text="Enviando..."><span class="arrow hlb hidden-phone" data-appear-animation="rotateInUpLeft"></span>
