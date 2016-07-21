@@ -17,3 +17,43 @@ h3{
 .contenedor-asesorar div {
 	    border-style: none;
 }
+
+
+.redes-sociales-twitter{
+	
+	height: 20px;
+	width: 20px;
+	background-color: #FFF;
+    color: #777;
+    -webkit-border-radius: 300px;
+	-moz-border-radius: 300px;
+	border-radius: 300px;
+}
+.redes-sociales-twitter:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+.redes-sociales-twitter:hover, .redes-sociales:active, .redes-sociales:focus { /* este grupo de selectores proporcionará a un bienvenido que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un bienvenido que emplea un ratón. */
+	text-decoration: none;
+	color: #FFF;
+	background-color: #55acee;
+}
+.redes-sociales-facebook{
+
+	height: 20px;
+	width: 20px;
+ -webkit-border-radius: 300px;
+	-moz-border-radius: 300px;
+	border-radius: 300px;
+	background-color: #FFF;
+    color: #777;
+}
+.redes-sociales-facebook:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+.redes-sociales-facebook:hover, .redes-sociales-facebook:active, .redes-sociales-facebook:focus { /* este grupo de selectores proporcionará a un bienvenido que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un bienvenido que emplea un ratón. */
+	text-decoration: none;
+	background-color:  #3b5998;
+    color: #FFF;
+}

@@ -16,7 +16,7 @@
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-     <link href="css/base.css" rel="stylesheet" type="text/css">
+
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
@@ -32,7 +32,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+     <link href="css/base.css" rel="stylesheet" type="text/css">
 </head>
 
 <body id="page-top">
@@ -44,7 +44,7 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a style="position:absolute;left:0px;top:-10px;" class="navbar-brand page-scroll" href="#page-top"><img src="img/logo2.png" width="50" height="40"></a>
+                <a style="position:absolute;left:0px;top:-10px;" class="navbar-brand page-scroll" href="#page-top"><img src="img/logo5.png" width="50" height="40"></a>
            <a style="position:absolute;left:50px;" class="navbar-brand page-scroll" href="#page-top">ESSOTEC</a>
             </div>
 
@@ -62,6 +62,20 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contacto</a>
+                    </li>
+                    <li>
+                    <a>
+                        <div class="redes-sociales-facebook ">
+                            <span class="fa fa-facebook"></span>
+                          </div>
+                    </a>
+                    </li>
+                     <li>
+                     <a>
+                        <div class="redes-sociales-twitter">
+                            <span class=" fa fa-twitter"></span>
+                          </div>
+                    </a>
                     </li>
                 </ul>
             </div>
@@ -92,7 +106,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">¿Quién Somos?</h2>
+                    <h2 class="section-heading">¿Quiénes Somos?</h2>
                     <hr class="light">                   
                     <p class="text-faded">
                     Trabajamos para aportar soluciones innovadoras 
@@ -291,7 +305,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-lg-offset-2">
+                <div class="col-lg-4 col-sm-6 col-lg-offset-2">
                     <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
                         <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
@@ -306,7 +320,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-sm-6">
                     <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">
                         <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
