@@ -33,6 +33,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
      <link href="css/base.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body id="page-top">
@@ -97,7 +98,7 @@
                 <h1 id="homeHeading">ESTRUCTURAS, SOFTWARE Y TECNOLOGÍA AMBIENTAL</h1>
                 <hr>
                 <p>Tecnologia e innovacion para el ambiente.</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Mas infomración</a>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Mas información</a>
             </div>
         </div>
     </header>
@@ -109,9 +110,9 @@
                     <h2 class="section-heading">¿Quiénes Somos?</h2>
                     <hr class="light">                   
                     <p class="text-faded">
-                    Trabajamos para aportar soluciones innovadoras 
-                    mediante un proceso permanete de innovacion tecnologica,
-                    gestion ambiental y software a la medidade  la necesidad del cliente encaminados hacia el desarrollo sostenible</p>       
+                    Trabajamos para aportar soluciones innovadoras, 
+                    mediante un proceso permanente de innovación tecnológica,
+                    gestión ambiental y software a la medida del cliente, encaminados hacia el desarrollo sostenible</p>       
                    
                     <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Empezar!</a>
                 </div>
@@ -269,7 +270,7 @@
                                     Ingeniero Ambiental
                                 </div>
                                 <div class="project-name">
-                                    Giovanni Ernesto Rodriguez diaz
+                                    Giovanni Ernesto Rodriguez Diaz
                                 </div>
                             </div>
                         </div>
@@ -299,7 +300,7 @@
                                     Ingeniero Industrial
                                 </div>
                                 <div class="project-name">
-                                    Robinson Laurel Rodriguez diaz
+                                    Robinson Laurel Rodriguez Diaz
                                 </div>
                             </div>
                         </div>
@@ -363,11 +364,11 @@
                             <input type="text" name="name" id="name" class="form-control"/>
                         </div>
                         <div class="col-md-6">
-                            <label>Telefono*</label>
+                            <label>Teléfono*</label>
                             <input type="text" name="phone" id="name" class="form-control"/>
                         </div>
                          <div class="col-md-12">
-                            <label>Correo electronico*</label>
+                            <label>Correo electrónico*</label>
                             <input type="text" name="email" id="name" class="form-control"/>
                         </div>                         
                         <div class="col-md-12">
@@ -385,20 +386,20 @@
                     <li> <a href="#"><span class="glyphicon glyphicon-map-marker"></span>
                         </a> <strong>Dirección:</strong>Yopal-Casanare Calle 15 No.18-13 Oficina 220
                     </li>
-                    <li> <a href="#"><span class="glyphicon glyphicon-map-marker"></span>
+                    <li> <a href="#"><span class="glyphicon glyphicon-phone"></span>
                         </a> <strong>Movil:</strong>+57 311 5208693
                     </li>
-                       <li> <a href="#"><span class="glyphicon glyphicon-map-marker"></span>
+                       <li> <a href="#"><span class="glyphicon glyphicon-phone"></span>
                         </a> <strong>Movil:</strong>+57 311 2399429
                     </li>
-                       <li> <a href="#"><span class="glyphicon glyphicon-map-marker"></span>
+                       <li> <a href="#"><span class="glyphicon glyphicon-phone"></span>
                         </a> <strong>Movil:</strong>+57 313 2657947
                     </li>
-                       <li> <a href="#"><span class="glyphicon glyphicon-map-marker"></span>
+                       <li> <a href="#"><span class="glyphicon glyphicon-phone"></span>
                         </a> <strong>Movil:</strong>+57 311 5907753
                     </li>
-                       <li> <a href="#"><span class="glyphicon glyphicon-map-marker"></span>
-                        </a> <strong>Movil:</strong>+57 311 5208693
+                       <li> <a href="#"><span class="glyphicon glyphicon-phone"></span>
+                        </a> <strong>Movil:</strong>+57 315 6021583
                    <li><a href="#">
                       <span class="glyphicon glyphicon-envelope"></span>
                     </a> <strong>E-mail:</strong> <a>estructura.ambiente.software@gmail.com</a>
@@ -427,6 +428,8 @@
 
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
+  <script src="js/base.js"></script>
+<a href="#" class="scrollup">Scroll</a>
 
 </body>
 
