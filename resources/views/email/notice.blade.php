@@ -6,11 +6,11 @@
 	</head>
 
 	<body>
-		<h1>Notificacion urgente</h1>
-		<p>{{$contact->name}}</p>
-		<p>{{$contact->phone}}</p>
-		<p>{{$contact->email}}</p>
-		<p>{{$contact->question}}</p>				
+		<h1 align="center">BIENVENIDO EVSSA.</h1>
+		</br>
+		<h1 align="center">Hola, {{$contact->name}}</h1>
+		<p>Estudiaremos tu solicitud y nos pondremos en contacto contigo, en el menor tiempo posible.</p>
+		<p>Gracias por elegirnos.</p>				
 	</body>
 
 </html>
