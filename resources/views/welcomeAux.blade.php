@@ -21,18 +21,9 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-    <!-- Theme CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">  
     <link href="css/creative.min.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
      <link href="css/base.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="{{ URL::asset('js/jquery-1.12.3.min.js') }}"></script>
     <script type="text/javascript" src="{{ URL::asset('js/formularios.js') }}"></script>
@@ -90,16 +81,20 @@
         <!-- /.container-fluid -->
     </nav>
   
-    <header>
-        
+    <header >
+        <div class="video-container">
+            <video preload="true" 
+                 autoplay="autoplay"
+                 loop="loop"
+                 volume="0"
+                 poster="">
+                 <source src="{{ URL::asset('video/intro.mp4') }}" type="video/mp4">
+
+            </video>
+        </div>
         <div class="header-content">
             <div class="header-content-inner">
-            @if (Session::has('mensaje'))
-            <div class="alert alert-success fade in">
-                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                  <strong>Exito!</strong> {{Session::get('mensaje')}}
-            </div>
-            @endif
+        
                 <h1 id="homeHeading">ESTRUCTURAS, SOFTWARE Y TECNOLOGÍA AMBIENTAL</h1>
                 <hr>
                 <p>Tecnologia e innovacion para el ambiente.</p>
@@ -343,7 +338,7 @@
                       <h3>Robinson Laurel Rodriguez Diaz
                     <small>Ingeniero Industrial</small>
                 </h3>
-                <p>Gestor e interventor de proyecto</p>
+                <p>Gestor e interventor de proyectos</p>
              </div>  
 
             <div class="col-lg-3 col-md-6 text-center">  
@@ -380,7 +375,7 @@
                     <form method="POST" name="fContacto" id="fContacto" class="formulario" action="{{ route('user.store') }}">
                      <input type="hidden" name="_token" value="{{ csrf_token() }}" id="token"></input>
                         <div class="col-md-6">
-                            <label>Nombre*</label>
+                            <label>Nombre o Empresa*</label>
                             <input type="text" name="name" id="name" class="form-control"/>
                         </div>
                         <div class="col-md-6">
@@ -400,6 +395,7 @@
                         </div>
                     </form>
                     </div>
+                    </br>
                 <div class="col-md-5">
 
                  <ul class="list-unstyled">

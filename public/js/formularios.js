@@ -14,8 +14,7 @@ $(document).ready(function(){
 			data:$("."+id).serialize(),
 			success:function(resp){
 				$('#alertas').css('display','inline-block');				
-				$('#alertas').append(resp);
-			
+				$('#alertas').append(resp);			
 			},
 			error:function(error){
 				//alert("error");

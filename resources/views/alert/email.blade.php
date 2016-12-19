@@ -6,12 +6,11 @@
 	    	<strong>Error!</strong> {{$error}}.
 	 	 </div>
 		@endforeach
-	@endif	
-@else	
-	@if($created==fALSE)	
+	@else	
 		<div class="alert alert-success">
 		    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-		    <strong>Enviado!</strong> Gracias por contactarnos.
+		    <strong>Se ha enviado tu solicitud!</strong> Gracias por contactarnos.
 	  	</div>
-	@endif	
-@endif
+	@endif
+@endif	
+

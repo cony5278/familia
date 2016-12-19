@@ -17,6 +17,8 @@ class UserController extends Controller
       		
      }   
      public function store(Request $request){
+
+        
         $rules = [
             'name'=>'required',
             'email'=>'required|email',
@@ -32,19 +34,21 @@ class UserController extends Controller
                 'errors'  => $validator->errors()->all()
             ]);
         }else{
+           
             $contact=new Contact($request['name'],$request['phone'],$request['email'],$request['question']);
         
-             $this->enviar_correo('email.notice',$contact);   
+             $this->enviar_correo('email.notice',$contact);            
              return view('alert.email')->with([
-                'created' => false]);
+                'created' => false,              
+            ]);           
         }
 
      
          //$contact=new Contact($request['name'],$request['phone'],$request['email'],$request['question']);
      	
      //	     $this->enviar_correo('email.notice',$contact);
-    	//	 Session::flash('mensaje', 'Su Correo sera evaluado oportunamente');
-      	//	return redirect('/');
+    
+      
      }    
     public function create(){
     
@@ -56,8 +60,12 @@ class UserController extends Controller
             'contact' => $contact,
         );
         Mail::send($vista, $data, function ($message) use ($contact) {
-            $message->from('nuevojuanchaco67@gmail.com', 'Mundocente');
-            $message->to($contact->email)->subject("Responder Urgente");
+            $message->from($contact->email, 'EVSSA');
+            $message->to($contact->email)->subject("Solicitud en proceso.");
+        });
+        Mail::send('email.company', $data, function ($message) use ($contact) {
+            $message->from($contact->email, 'RECIBIDO');
+            $message->to('essotec.ing@gmail.com')->subject("Procesar solicitud");
         });
     }
 }

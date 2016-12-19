@@ -149,15 +149,15 @@ aside {
 header {
   position: relative;
   width: 100%;
-  min-height: auto;
+ /* min-height: auto;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/header.jpg');
+  /*background-image: url('../img/header.jpg');*/
   text-align: center;
-  color: white;
+  color: black;
 }
 header .header-content {
   position: relative;
@@ -181,6 +181,7 @@ header .header-content .header-content-inner p {
   font-size: 16px;
   margin-bottom: 50px;
 }
+
 @media (min-width: 768px) {
   header {
     min-height: 100%;
