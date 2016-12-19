@@ -380,11 +380,11 @@
                         </div>
                         <div class="col-md-6">
                             <label>Teléfono*</label>
-                            <input type="text" name="phone" id="name" class="form-control"/>
+                            <input type="text" name="phone" id="phone" class="form-control"/>
                         </div>
                          <div class="col-md-12">
                             <label>Correo electrónico*</label>
-                            <input type="text" name="email" id="name" class="form-control"/>
+                            <input type="text" name="email" id="email" class="form-control"/>
                         </div>                         
                         <div class="col-md-12">
                         <label>Dudas / Inquietudes *</label>
